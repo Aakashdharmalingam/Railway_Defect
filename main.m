@@ -49,3 +49,13 @@ disp(['Total Crack Length: ', num2str(Total_Length), ' pixels'])
 h = imdistline; 
 impixelinfo; 
 imtool(BW4); 
+
+epochs = 1:10; % Replace with actual iteration numbers if available
+accuracy = [50 55 60 68 72 78 81 85 87 90]; % Example accuracy values
+
+figure(9);
+plot(epochs, accuracy, '-o', 'LineWidth', 2, 'MarkerSize', 6);
+xlabel('Epochs');
+ylabel('Accuracy (%)');
+title('Accuracy over Iterations');
+grid on;
