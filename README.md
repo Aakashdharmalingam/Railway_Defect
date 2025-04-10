@@ -53,3 +53,9 @@ BW2 = bwareaopen(BW,1000);
 BW4 = bwmorph(BW2,'skel',Inf);
 measurements = regionprops(BW4,'Area');
 Total_Length = sum([measurements.Area]);
+
+## 👥 Authors
+
+- [Urvashi Dube](https://github.com/UrvashiDube02)
+- [D. Aakash](https://github.com/Aakashdharmalingam)
+
