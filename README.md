@@ -35,9 +35,15 @@ This project leverages **MATLAB** and various image processing techniques such a
 6. Convert to Binary Image  
 7. Remove Noise  
 8. Skeletonization  
-9. Crack Detection and Measurement  
+9. Crack Detection and Measurement
+
+## 👥 Authors
+
+- [Urvashi Dube](https://github.com/UrvashiDube02)
+- [D. Aakash](https://github.com/Aakashdharmalingam)
 
 > Images processed through MATLAB are saved and displayed at each stage.
+
 
 ## 🧬 Code Sample
 
@@ -54,8 +60,5 @@ BW4 = bwmorph(BW2,'skel',Inf);
 measurements = regionprops(BW4,'Area');
 Total_Length = sum([measurements.Area]);
 
-## 👥 Authors
 
-- [Urvashi Dube](https://github.com/UrvashiDube02)
-- [D. Aakash](https://github.com/Aakashdharmalingam)
 
